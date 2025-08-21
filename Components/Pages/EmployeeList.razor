@@ -1,0 +1,63 @@
+﻿@using OOP_final.Components.Models
+@using OOP_final.Components.Data
+@using Microsoft.EntityFrameworkCore
+
+
+@page "/edit-employee-list"
+@inject IDbContextFactory<AppDbContext> DbFactory
+@inject NavigationManager Navigation
+
+<h2>Edit Employee</h2>
+
+@if (employees == null)
+{
+    <p>Loading employees...</p>
+}
+else if (!employees.Any())
+{
+    <p>No employees found.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Email</th>
+                <th>Type</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var emp in employees)
+            {
+                <tr>
+                    <td>@emp.Name</td>
+                    <td>@emp.Position</td>
+                    <td>@emp.Email</td>
+                    <td>@(emp is Fulltime ? "Full-Time" : "Part-Time")</td>
+                    <td>
+                        <button class="btn btn-primary" @onclick="() => Edit(emp.Id)">Edit</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Employee> employees = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var db = DbFactory.CreateDbContext();
+        employees = await db.Employees.ToListAsync();
+    }
+
+    private void Edit(int id)
+    {
+        // Navigate to edit page with employee Id
+        Navigation.NavigateTo($"/edit-employee/{id}");
+    }
+}

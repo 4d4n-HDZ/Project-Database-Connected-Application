@@ -1,0 +1,104 @@
+﻿@using OOP_final.Components.Models
+@using OOP_final.Components.Data
+@using Microsoft.EntityFrameworkCore
+
+@page "/edit-employee/{EmployeeId:int}"
+@inject IDbContextFactory<AppDbContext> DbFactory
+@inject NavigationManager Navigation
+
+<h2>Edit Employee</h2>
+
+@if (selectedEmployee == null)
+{
+    <p>Loading employee...</p>
+}
+else
+{
+    <div class="e-form">
+
+        <EditForm Model="@selectedEmployee" OnValidSubmit="@SaveEmployee">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <div class="form">
+                <label>Name:</label>
+                <InputText @bind-Value="selectedEmployee.Name" class="form-control" />
+            </div>
+
+            <div class="form">
+                <label>Position:</label>
+                <InputText @bind-Value="selectedEmployee.Position" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label>Email:</label>
+                <InputText @bind-Value="selectedEmployee.Email" class="form-control" />
+            </div>
+
+            @if (selectedEmployee is Fulltime ft)
+            {
+                <div class="form">
+                    <label>Annual Salary:</label>
+                    <InputNumber @bind-Value="ft.AnnualSalary" class="form-control" />
+                </div>
+            }
+            else if (selectedEmployee is Parttime pt)
+            {
+                <div class="form">
+                    <label>Hourly Rate:</label>
+                    <InputNumber @bind-Value="pt.HourlyRate" class="form-control" />
+                </div>
+                <div class="form">
+                    <label>Hours Per Week:</label>
+                    <InputNumber @bind-Value="pt.HoursPerWeek" class="form-control" />
+                </div>
+            }
+
+            <button class="btn-primary" type="submit">Save Changes</button>
+        </EditForm>
+
+    </div>
+    
+
+    @if (showPopup)
+    {
+        <div class="pop-up-overlay">
+            <div class="pop-up">
+                <h5>Employee Updated!</h5>
+                <button class="btn btn-secondary" @onclick="ClosePopup">Close</button>
+            </div>
+        </div>
+    }
+}
+
+@code {
+    [Parameter]
+    public int EmployeeId { get; set; }
+
+    private Employee? selectedEmployee;
+    private bool showPopup = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var db = DbFactory.CreateDbContext();
+        selectedEmployee = await db.Employees.FindAsync(EmployeeId);
+    }
+
+    private async Task SaveEmployee()
+    {
+        if (selectedEmployee == null) return;
+
+        using var db = DbFactory.CreateDbContext();
+        db.Employees.Update(selectedEmployee);
+        await db.SaveChangesAsync();
+
+        showPopup = true;
+
+
+    }
+
+    private void ClosePopup()
+    {
+        showPopup = false;
+    }
+}

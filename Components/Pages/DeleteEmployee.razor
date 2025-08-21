@@ -1,0 +1,95 @@
+﻿@using OOP_final.Components.Models
+@using OOP_final.Components.Data
+@using Microsoft.EntityFrameworkCore
+
+
+@page "/delete-employee"
+@inject IDbContextFactory<AppDbContext> DbFactory
+
+<h2>Delete Employee</h2>
+
+@if (employees == null)
+{
+    <p>Loading employees...</p>
+}
+else if (!employees.Any())
+{
+    <p>No employees found.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Email</th>
+                <th>Type</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var emp in employees)
+            {
+                <tr>
+                    <td>@emp.Name</td>
+                    <td>@emp.Position</td>
+                    <td>@emp.Email</td>
+                    <td>@(emp is Fulltime ? "Full-Time" : "Part-Time")</td>
+                    <td>
+                        <button class="btn btn-secondary" @onclick="() => Delete(emp.Id)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@if (showPopup)
+{
+    <div class="pop-up-overlay">
+        <div class="pop-up">
+            <h5>Employee Deleted!</h5>
+            <button class="btn btn-secondary" @onclick="ClosePopup">Close</button>
+        </div>
+    </div>
+}
+
+
+@code {
+    private List<Employee> employees = new();
+    private bool showPopup = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadEmployees();
+    }
+
+    private async Task LoadEmployees()
+    {
+        using var db = DbFactory.CreateDbContext();
+        employees = await db.Employees.ToListAsync();
+    }
+
+    private async Task Delete(int id)
+    {
+        using var db = DbFactory.CreateDbContext();
+
+        var employee = await db.Employees.FindAsync(id);
+        if (employee == null)
+            return;
+
+        db.Employees.Remove(employee);
+        await db.SaveChangesAsync();
+
+        showPopup = true;
+
+        // Refresh list after deletion
+        await LoadEmployees();
+    }
+
+    private void ClosePopup()
+    {
+        showPopup = false;
+    }
+}

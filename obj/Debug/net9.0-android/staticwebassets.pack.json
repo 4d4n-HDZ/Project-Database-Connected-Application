@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\object-orinetedSpring2025\\OOP-final\\obj\\Debug\\net9.0-android\\scopedcss\\bundle\\OOP-final.styles.css",
+      "PackagePath": "staticwebassets\\OOP-final.styles.css"
+    },
+    {
+      "Id": "C:\\object-orinetedSpring2025\\OOP-final\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\object-orinetedSpring2025\\OOP-final\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\object-orinetedSpring2025\\OOP-final\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\object-orinetedSpring2025\\OOP-final\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.OOP-final.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.OOP-final.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.build.OOP-final.props",
+      "PackagePath": "build\\OOP-final.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.buildMultiTargeting.OOP-final.props",
+      "PackagePath": "buildMultiTargeting\\OOP-final.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0-android\\staticwebassets\\msbuild.buildTransitive.OOP-final.props",
+      "PackagePath": "buildTransitive\\OOP-final.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

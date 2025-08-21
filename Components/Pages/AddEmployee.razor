@@ -1,0 +1,133 @@
+﻿@using OOP_final.Components.Models
+@using OOP_final.Components.Data
+@using Microsoft.EntityFrameworkCore
+
+@page "/add-employee"
+@inject IDbContextFactory<AppDbContext> DbFactory
+
+<h2>Add Employee</h2>
+
+<div class="a-form">
+    <EditForm Model="@employee" OnValidSubmit="@Add">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="form">
+            <label>Employee Type:</label>
+            <select @bind="employeeType" @bind:event="onchange">
+                <option value="FullTime">Full-Time</option>
+                <option value="PartTime">Part-Time</option>
+            </select>
+        </div>
+
+        <div class="form">
+            <label>Name:</label>
+            <InputText @bind-Value="employee.Name" />
+            <ValidationMessage For="@(() => employee.Name)" />
+        </div>
+
+        <div class="form">
+            <label>Position:</label>
+            <InputText @bind-Value="employee.Position" />
+            <ValidationMessage For="@(() => employee.Position)" />
+        </div>
+
+        <div class="form">
+            <label>Email:</label>
+            <InputText @bind-Value="employee.Email" />
+            <ValidationMessage For="@(() => employee.Email)" />
+        </div>
+
+        @if (employeeType == "FullTime")
+        {
+            <div class="form">
+                <label>Annual Salary:</label>
+                <InputNumber @bind-Value="((Fulltime)employee).AnnualSalary" />
+                <ValidationMessage For="@(() => ((Fulltime)employee).AnnualSalary)" />
+            </div>
+        }
+        else
+        {
+            <div class="form">
+                <label>Hourly Rate:</label>
+                <InputNumber @bind-Value="((Parttime)employee).HourlyRate" />
+                <ValidationMessage For="@(() => ((Parttime)employee).HourlyRate)" />
+            </div>
+            <div class="form">
+                <label>Hours Per Week:</label>
+                <InputNumber @bind-Value="((Parttime)employee).HoursPerWeek" />
+                <ValidationMessage For="@(() => ((Parttime)employee).HoursPerWeek)" />
+            </div>
+        }
+
+        <button class="btn-primary" type="submit">Add Employee</button>
+    </EditForm>
+</div>
+
+@if (showPopup)
+{
+    <div class="pop-up-overlay">
+        <div class="pop-up">
+            <h5>Employee Added!</h5>
+            <button class="btn-secondary" @onclick="ClosePopup">Close</button>
+        </div>
+    </div>
+}
+
+@code {
+    private string _employeeType = "FullTime";
+    private Employee employee = new Fulltime();
+    private bool showPopup = false;
+
+    private string employeeType
+    {
+        get => _employeeType;
+        set
+        {
+            if (_employeeType != value)
+            {
+                _employeeType = value;
+                // Create a new instance of the correct type
+                employee = _employeeType == "FullTime" ? new Fulltime() : new Parttime();
+            }
+        }
+    }
+
+    private async Task Add()
+    {
+        using var db = DbFactory.CreateDbContext();
+
+        Employee newEmp = employeeType switch
+        {
+            "FullTime" => new Fulltime
+            {
+                Name = employee.Name,
+                Position = employee.Position,
+                Email = employee.Email,
+                AnnualSalary = ((Fulltime)employee).AnnualSalary
+            },
+            "PartTime" => new Parttime
+            {
+                Name = employee.Name,
+                Position = employee.Position,
+                Email = employee.Email,
+                HourlyRate = ((Parttime)employee).HourlyRate,
+                HoursPerWeek = ((Parttime)employee).HoursPerWeek
+            },
+            _ => throw new InvalidOperationException("Unknown employee type")
+        };
+
+        db.Employees.Add(newEmp);
+        await db.SaveChangesAsync();
+
+        showPopup = true;
+
+        // Reset form
+        employee = employeeType == "FullTime" ? new Fulltime() : new Parttime();
+    }
+
+    private void ClosePopup()
+    {
+        showPopup = false;
+    }
+}

@@ -1,0 +1,8 @@
+wwwroot\css\app.css
+wwwroot\css\bootstrap\bootstrap.min.css
+wwwroot\css\bootstrap\bootstrap.min.css.map
+wwwroot\index.html
+C:\object-orinetedSpring2025\OOP-final\wwwroot\css\app.css
+C:\object-orinetedSpring2025\OOP-final\wwwroot\css\bootstrap\bootstrap.min.css
+C:\object-orinetedSpring2025\OOP-final\wwwroot\css\bootstrap\bootstrap.min.css.map
+C:\object-orinetedSpring2025\OOP-final\wwwroot\index.html

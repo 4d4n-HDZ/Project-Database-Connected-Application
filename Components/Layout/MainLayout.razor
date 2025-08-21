@@ -1,0 +1,41 @@
+﻿@inherits LayoutComponentBase
+
+
+<div class="header">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <h3>Employee Management</h3>
+
+        <nav class="menu d-flex">
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                    <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="add-employee">
+                     <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Add
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="delete-employee">
+                     <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Delete
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="edit-employee-list">
+                     <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Edit
+                 </NavLink>
+            </div>
+        </nav>
+     </div>
+</div>
+
+
+<main>
+    <div ="content">
+        <article class="content px-4">
+            @Body
+        </article>
+    </div>
+        
+</main>

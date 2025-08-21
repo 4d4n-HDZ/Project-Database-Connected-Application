@@ -1,0 +1,246 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\object-orinetedSpring2025\\OOP-final\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|c:\\object-orinetedspring2025\\oop-final\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|solutionrelative:wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|c:\\object-orinetedspring2025\\oop-final\\components\\pages\\addemployee.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|solutionrelative:components\\pages\\addemployee.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|c:\\object-orinetedspring2025\\oop-final\\components\\models\\fulltime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|solutionrelative:components\\models\\fulltime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|c:\\object-orinetedspring2025\\oop-final\\components\\models\\parttime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|solutionrelative:components\\models\\parttime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|c:\\object-orinetedspring2025\\oop-final\\components\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|solutionrelative:components\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|c:\\object-orinetedspring2025\\oop-final\\components\\pages\\employeelist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|solutionrelative:components\\pages\\employeelist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|c:\\object-orinetedspring2025\\oop-final\\components\\pages\\editemployee.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|solutionrelative:components\\pages\\editemployee.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|c:\\object-orinetedspring2025\\oop-final\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|c:\\object-orinetedspring2025\\oop-final\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|solutionrelative:components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|c:\\object-orinetedspring2025\\oop-final\\components\\pages\\deleteemployee.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|solutionrelative:components\\pages\\deleteemployee.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|c:\\object-orinetedspring2025\\oop-final\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|solutionrelative:data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|c:\\object-orinetedspring2025\\oop-final\\data\\dbcontex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|solutionrelative:data\\dbcontex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|c:\\object-orinetedspring2025\\oop-final\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|solutionrelative:mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|c:\\object-orinetedspring2025\\oop-final\\oop-final.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{063118DB-616B-4933-B323-C0B699A75BC1}|OOP-final.csproj|solutionrelative:oop-final.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\object-orinetedSpring2025\\OOP-final\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\object-orinetedSpring2025\\OOP-final\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-21T17:13:03.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditEmployee.razor",
+              "DocumentMoniker": "C:\\object-orinetedSpring2025\\OOP-final\\Components\\Pages\\EditEmployee.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\EditEmployee.razor",
+              "ToolTip": "C:\\object-orinetedSpring2025\\OOP-final\\Components\\Pages\\EditEmployee.razor",
+              "RelativeToolTip": "Components\\Pages\\EditEmployee.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-21T17:12:20.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DeleteEmployee.razor",
+              "DocumentMoniker": "C:\\object-orinetedSpring2025\\OOP-final\\Components\\Pages\\DeleteEmployee.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\DeleteEmployee.razor",
+              "ToolTip": "C:\\object-orinetedSpring2025\\OOP-final\\Components\\Pages\\DeleteEmployee.razor",
+              "RelativeToolTip": "Components\\Pages\\DeleteEmployee.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-21T17:10:56.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\object-orinetedSpring2025\\OOP-final\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\object-orinetedSpring2025\\OOP-final\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-21T16:43:10.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeList.razor",
+              "DocumentMoniker": "C:\\object-orinetedSpring2025\\OOP-final\\Components\\Pages\\EmployeeList.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\EmployeeList.razor",
+              "ToolTip": "C:\\object-orinetedSpring2025\\OOP-final\\Components\\Pages\\EmployeeList.razor",
+              "RelativeToolTip": "Components\\Pages\\EmployeeList.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-21T19:06:44.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddEmployee.razor",
+              "DocumentMoniker": "C:\\object-orinetedSpring2025\\OOP-final\\Components\\Pages\\AddEmployee.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\AddEmployee.razor",
+              "ToolTip": "C:\\object-orinetedSpring2025\\OOP-final\\Components\\Pages\\AddEmployee.razor",
+              "RelativeToolTip": "Components\\Pages\\AddEmployee.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-21T17:09:03.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\object-orinetedSpring2025\\OOP-final\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\app.css",
+              "ToolTip": "C:\\object-orinetedSpring2025\\OOP-final\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "wwwroot\\css\\app.css",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAAK0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-21T17:14:51.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DbSeeder.cs",
+              "DocumentMoniker": "C:\\object-orinetedSpring2025\\OOP-final\\Data\\DbSeeder.cs",
+              "RelativeDocumentMoniker": "Data\\DbSeeder.cs",
+              "ToolTip": "C:\\object-orinetedSpring2025\\OOP-final\\Data\\DbSeeder.cs",
+              "RelativeToolTip": "Data\\DbSeeder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T18:17:33.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Dbcontex.cs",
+              "DocumentMoniker": "C:\\object-orinetedSpring2025\\OOP-final\\Data\\Dbcontex.cs",
+              "RelativeDocumentMoniker": "Data\\Dbcontex.cs",
+              "ToolTip": "C:\\object-orinetedSpring2025\\OOP-final\\Data\\Dbcontex.cs",
+              "RelativeToolTip": "Data\\Dbcontex.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T18:19:41.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Parttime.cs",
+              "DocumentMoniker": "C:\\object-orinetedSpring2025\\OOP-final\\Components\\Models\\Parttime.cs",
+              "RelativeDocumentMoniker": "Components\\Models\\Parttime.cs",
+              "ToolTip": "C:\\object-orinetedSpring2025\\OOP-final\\Components\\Models\\Parttime.cs",
+              "RelativeToolTip": "Components\\Models\\Parttime.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T16:57:43.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Fulltime.cs",
+              "DocumentMoniker": "C:\\object-orinetedSpring2025\\OOP-final\\Components\\Models\\Fulltime.cs",
+              "RelativeDocumentMoniker": "Components\\Models\\Fulltime.cs",
+              "ToolTip": "C:\\object-orinetedSpring2025\\OOP-final\\Components\\Models\\Fulltime.cs",
+              "RelativeToolTip": "Components\\Models\\Fulltime.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T16:56:55.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\object-orinetedSpring2025\\OOP-final\\Components\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Components\\Models\\Employee.cs",
+              "ToolTip": "C:\\object-orinetedSpring2025\\OOP-final\\Components\\Models\\Employee.cs",
+              "RelativeToolTip": "Components\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T16:53:37.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\object-orinetedSpring2025\\OOP-final\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MauiProgram.cs",
+              "ToolTip": "C:\\object-orinetedSpring2025\\OOP-final\\MauiProgram.cs",
+              "RelativeToolTip": "MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T18:20:18.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OOP-final.csproj",
+              "DocumentMoniker": "C:\\object-orinetedSpring2025\\OOP-final\\OOP-final.csproj",
+              "RelativeDocumentMoniker": "OOP-final.csproj",
+              "ToolTip": "C:\\object-orinetedSpring2025\\OOP-final\\OOP-final.csproj",
+              "RelativeToolTip": "OOP-final.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-21T16:52:08.193Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
